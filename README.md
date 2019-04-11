@@ -16,15 +16,15 @@ Process:
 - Compile a list of urls to visit (from the dep_list.py script).
   - If data for the day already exists:
     start at the last visited url (dep_list[-1])
-  - Else
-    Start at the beginning of dep_list.
+  - Else: 
+    start at the beginning of dep_list.
   
-- For each url in dep_list.
-    Open a selenium webdriver instance.
-    Scroll down to the bottom of the page to load all ads available.
-    Create Soup file of the source code using BeautifulSoup.
+- For each url in dep_list:
+    - Open a selenium webdriver instance.
+    - Scroll down to the bottom of the page to load all ads available.
+    - Create Soup file of the source code using BeautifulSoup.
   
-    For each ad in url.
+    - For each ad in url:
       Scrape and return a list of the recovered data.
       Check if it is a duplicate.
         If no.
@@ -32,7 +32,7 @@ Process:
         Else.
           Append it to the duplicates list.
     
-    Pickle the current state of the list.
+    - Pickle the current state of the list.
 
 - Append the data list to a pandas dataframe and save it as .xlsx.
 
