@@ -3,7 +3,7 @@ Scraper script w/o urls
 
 This is a version of a personal project to scrape private advertisement websites (2 websites supported) for publicly available data. Urls of websites have been removed for confidentiality.
 
-The purpuse of the script is to compile, every day, a list of unique ads published on the website, mainly gathering the users' unique id, subscription plan and location.
+The purpose of the script is to compile, each day, a list of unique ads published on the website, mainly gathering the users' unique id, subscription plan and location.
 The end goal is to create a base of longitudinal data to be analysed for an investigation.
 
 Process:
