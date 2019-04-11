@@ -44,12 +44,12 @@ PACKAGES AND PYTHON:
 Python version: 3.7
 
 Packages :
-  requests
-  lxml 
-  bs4 
-  selenium
-  pandas
-  openpyxl
-  os
-  datetime
-  pickle
+  - requests
+  - lxml 
+  - bs4 
+  - selenium
+  - pandas
+  - openpyxl
+  - os
+  - datetime
+  - pickle
