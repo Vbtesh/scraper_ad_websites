@@ -7,16 +7,16 @@ The purpuse of the script is to compile, every day, a list of unique ads publish
 The end goal is to create a base of longitudinal data to be analysed for an investigation.
 
 Process:
-- Check if pickle files (list of ids, list of ads, list of duplicates) for the current date already exists.
-  If True.
+- Check if pickle files (list of ids, list of ads, list of duplicates) for the current date already exists
+  - If True:
     recover the files to append the data gathered by the current instance of the script.
-  Else.
-    create new lists.
+  - Else:
+    create new lists
   
 - Compile a list of urls to visit (from the dep_list.py script).
-  If data for the day already exists.
-    start at the last visited url (dep_list[-1]).
-  Else.
+  - If data for the day already exists:
+    start at the last visited url (dep_list[-1])
+  - Else
     Start at the beginning of dep_list.
   
 - For each url in dep_list.
